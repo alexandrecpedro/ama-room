@@ -4,9 +4,10 @@
 <br>
 
 <div align = 'center' justify-content = 'space-around' >
-  <img width="1604" alt="Rocketseat AMA Room - Desktop" src="./project/screens/screen1.png">
+  <img width="1604" alt="Rocketseat Create Room - Desktop" src="./project/screens/screen1-Create_room.png">
+  <br>
+  <img width="1604" alt="Rocketseat AMA Room - Desktop" src="./project/screens/screen2-AMA_Room.png">
 </div>
-<br>
 <br>
 
 <p></p>
@@ -67,10 +68,10 @@ The following tools were used in building the project:<br><br>
   <h3>IDE</h3>
   <img height =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
   <br>
-  <!-- <h3>UX/UI</h3>
+  <h3>UX/UI</h3>
   <img height =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
   <img height =' 100px ' left='80px' src="./project/logo/phosphor-icons_logo.png"/>
-  <br> -->
+  <br>
   <h3>Frontend</h3>
   <img width =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
   <img width =' 100px ' left='80px' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
@@ -195,6 +196,7 @@ The following tools were used in building the project:<br><br>
       <ul &nbsp;> 
         <li &nbsp;><b>Frontend project</b>
           <ul>
+            <li></li>
             <li>Create feature: modal
               <ul>
                 <li>Install Radix-UI: npm i @radix-ui/react-dialog </li>
