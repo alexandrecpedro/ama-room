@@ -38,28 +38,25 @@ The following tools were used in building the project:<br><br>
 |                      Type                       |       Tools       |              References               |
 |:-----------------------------------------------:|:-----------------:|:-------------------------------------:|
 |                       IDE                       |    VISUAL CODE    |    https://code.visualstudio.com/     |
-|              Design Interface Tool              | FIGMA (Prototype - UX/UI) |      https://www.figma.com/     |
-|         Programming Language (Frontend)         |       REACT       |       https://reactjs.org/               |
-|         Programming Language (Frontend)         |    TYPESCRIPT     |  https://www.typescriptlang.org/        |
-|      Utility-first CSS Framework (Frontend)     |   TAILWIND CSS    |     https://tailwindcss.com/           |
-|    Tool for transforming CSS with JavaScript    |     POST CSS      |       https://postcss.org/               |
+|              Design Interface Tool              | FIGMA (Prototype - UX/UI) |      https://www.figma.com/   |
+|         Programming Language (Frontend)         |       REACT       |       https://reactjs.org/            |
+|         Programming Language (Frontend)         |    TYPESCRIPT     |  https://www.typescriptlang.org/      |
+|      Utility-first CSS Framework (Frontend)     |   TAILWIND CSS    |     https://tailwindcss.com/          |
+|    Tool for transforming CSS with JavaScript    |     POST CSS      |       https://postcss.org/            |
 |         Graphic components (Frontend)           |  PHOSPHOR ICONS   |    https://phosphoricons.com/         |
-|             UI Components for React             |     RADIX-UI      |     https://www.radix-ui.com/          |
-|     Tool to build frontend faster (Frontend)    |      VITE.JS      |        https://vitejs.dev/                |
-|  Promise based HTTP client - browser & Node.js  |       AXIOS       |      https://axios-http.com/            |
-|       API and backend services (Backend)        |        GO         |     https://go.dev/                    |
-| Open source API development ecosystem (Testing) |      POSTMAN      |       https://www.postman.com/           |
-|               Database (Backend)                |    POSTGRESQL     |   https://www.postgresql.org/        |
-|         DotNET ORM (Backend, Database)          | ENTITY FRAMEWORK  | https://learn.microsoft.com/en-us/ef/      |
-|                    Security                     |       JWT        |            https://jwt.io/            |
-|                API Documentation                |      SWAGGER      |          https://swagger.io/          |
+|             UI Components for React             |     RADIX-UI      |     https://www.radix-ui.com/         |
+|     Tool to build frontend faster (Frontend)    |      VITE.JS      |        https://vitejs.dev/            |
+|  Promise based HTTP client - browser & Node.js  |       AXIOS       |      https://axios-http.com/          |
+|       API and backend services (Backend)        |        GO         |     https://go.dev/                   |
+|               Database (Backend)                |    POSTGRESQL     |   https://www.postgresql.org/         |
+| Open source API development ecosystem (Testing) |      POSTMAN      |       https://www.postman.com/        |
 </div>
 <br>
 
 <div align = 'center'>
   <h3>Backend | API</h3>
   <img height =' 100px ' left='80px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
-  <img height =' 100px ' left='80px' src="https://jwt.io/img/logo-asset.svg" />
+  <!-- <img height =' 100px ' left='80px' src="https://jwt.io/img/logo-asset.svg" /> -->
   <br>
   <h3>Testing</h3>
   <img width =' 100px ' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
@@ -92,6 +89,8 @@ The following tools were used in building the project:<br><br>
     <li &nbsp;>Part 2 - Go + React | Class 02</li>
     <br>
     <li &nbsp;>Part 3 - Go + React | Class 03</li>
+    <br>
+    <li &nbsp;>Part 4 - Go + React | Class 04</li>
     <br>
   </ol>
 </div>
@@ -151,7 +150,7 @@ The following tools were used in building the project:<br><br>
                 <li>Run directive: go generate ./...</li>
               </ul>
             </li>
-            <li>Write API logic: ./internal/api/api.go</li>
+            <li>Write API basics: ./internal/api/api.go</li>
             <li>Create main function: ./cmd/wsrs/main.go</li>
             <li>Start server: go run ./cmd/wsrs/main.go</li>
           </ul>
@@ -163,18 +162,31 @@ The following tools were used in building the project:<br><br>
       <ul &nbsp;>
         <li &nbsp;><b>Backend project</b>
           <ul>
-            <li>Define "Use Cases"</li>
-            <li>Set routes</li>
-            <li>Install and set Prisma
-              <ul>
-                <li>Install Prisma Entity Relationship Diagram Generator: npm i -D prisma-erd-generator @mermaid-js/mermaid-cli</li>
-                <li>Generate: npx prisma generate</li>
-                <li>Create Seed: ./prisma/seed.ts</li>
-                <li>Run seed: npx prisma db seed</li>
-              </ul>
+            <li>Install libs
+              <ol>
+                <li>Gorilla Websocket: go get github.com/gorilla/websocket</li>
+                <li></li>
+                <li></li>
+              </ol>
             </li>
-            <li>Zod: npm i zod</li>
-            <li>Day.JS: npm i dayjs</li>
+            <li>API configuration: ./internal/api/api.go
+              <ol>
+                <li>Set middlewares</li>
+                <li>CORS
+                  <ul>
+                    <li>Install Chi CORS lib: go get github.com/go-chi/cors</li>
+                    <li>Apply basic CORS</li>
+                  </ul>
+                </li>
+                <li>Set routes</li>
+                <li>Implementing API methods from routes</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li &nbsp;><b>Testing</b>
+          <ul>
+            <li>Test backend at Postman: https://www.postman.com/</li>
           </ul>
         </li>
       </ul>
@@ -243,7 +255,7 @@ The following tools were used in building the project:<br><br>
     <li &nbsp;>Set the development environment at you local computer</li>
     <li &nbsp;>Clone the repository 
       <ul>
-        <li>git clone https://github.com/alexandrecpedro/rocketseat-auction</li>
+        <li>git clone https://github.com/alexandrecpedro/ama-room</li>
       </ul>
     </li>
     <li &nbsp;>Enter the project directory: 
@@ -251,14 +263,46 @@ The following tools were used in building the project:<br><br>
         <li>cd rocketseat-auction</li>
       </ul>
     </li>
-    <li &nbsp;>Build the project: 
+    <li><b>Testing</b> 
       <ul>
-        <li>dotnet build</li>
-      </ul>
-    </li>
-    <li &nbsp;>Run the project: 
-      <ul>
-        <li>dotnet run</li>
+        <li &nbsp;><u>Backend</u>
+          <ol>
+            <li &nbsp;>Enter the directory
+              <ul>
+                <li>cd backend</li>
+              </ul>
+            </li>
+            <li &nbsp;>Install the dependencies
+              <ul>
+                <li>go mod tidy</li>
+              </ul>
+            </li>
+            <li &nbsp;>Run
+              <ul>
+                <li>go run ./cmd/wsrs/main.go</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li &nbsp;><u>Frontend</u>
+          <ol>
+            <li &nbsp;>Enter the directory
+              <ul>
+                <li>cd frontend</li>
+              </ul>
+            </li>
+            <li &nbsp;>Install the dependencies
+              <ul>
+                <li>npm install</li>
+              </ul>
+            </li>
+            <li &nbsp;>Run
+              <ul>
+                <li>npm run dev</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
       </ul>
     </li>
   </ol>
